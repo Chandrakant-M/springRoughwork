@@ -1,0 +1,10 @@
+Add jar files for spring core: right-click on project->Build path-> Installed libraries -> external jars->select spring core jars
+Configure java object in an xml file( eg. employeeBean.xml or web.xml):
+  create an xml file in (? where does the container search for xml files) with root tag beans(with properties xmlns,xmlcontext and 
+    schemalocation). Child tag(s) bean with sub-tags property which defines what will be the properties of object that will be created.
+  Use spring IOC container (BeanFactory or ApplicationContext) to get the objects constructed by them.
+    ApplicationContext context = new ClassPathXmlApplicationContext("employeeBean.xml")
+    Employee emp1 = (Employee) context.getBean("emp1"); // emp1 is the id attribute of the bean tag defined in the xml file; other attribute
+      // being class which states the class of the object being created. Property sub-tag has properties name and value.
+      // --> emp1 object created will have the properties taken from the xml file
+    Employee emp2 = context.getBean("emp2",Employee.class);
