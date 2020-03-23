@@ -1,0 +1,16 @@
+AOP: Aspect-oriented programming
+AOP is for tackling cross-cutting concerns(the concerns which cut across all modules eg. logging,security)
+
+Core module consists of Core,Bean,Context and SpEL
+Data Access module consists of JDBC,ORM,OXM,JMS and Transaction.
+Web layer consists of WebSocket,Servlet,Portlet and Web.
+Miscellaneous : AOP,Instrumentation,Messaging,Test.
+
+FirstProgram : 1:00:21.
+download Spring IDE from Eclipse Marketplace.
+Steps.
+1. Write a Bean class
+2. XML file
+3. Main class containing main() method.
+
+Spring Container is responsible for creating objects by looking at XML config
