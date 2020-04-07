@@ -14,3 +14,10 @@ Steps.
 3. Main class containing main() method.
 
 Spring Container is responsible for creating objects by looking at XML config
+
+XML file bean element(tag) :
+1. init-method="myInit"
+2. destroy-method="myDestroy"
+ where myInit and myDestroy are the method names for initializing and destroying the corresponding bean objects.
+ 
+ 
