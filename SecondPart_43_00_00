@@ -20,4 +20,4 @@ XML file bean element(tag) :
 2. destroy-method="myDestroy"
  where myInit and myDestroy are the method names for initializing and destroying the corresponding bean objects.
  
- 
+{ApplicationContext} cntxt.close() will delete all the objects created.
